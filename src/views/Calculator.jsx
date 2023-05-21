@@ -10,7 +10,7 @@ const Calculator = () => {
   const {state,handlers} = useCalculatorOperations();
 
   return (
-    <div className="wrapper">
+    <div className={Style.wrapper}>
       <div>
         <button className={Style.mainButton} onClick={handlers.handleOnAddBlock}>Add row</button>
       </div>
@@ -47,7 +47,7 @@ const Calculator = () => {
 const CalcOperation = (props) => {
   return (
     <li>
-      <div>
+      <div className={Style.newField}>
       <select
         onChange={props.onSelectionChange}
         value={props.operation.operation}
