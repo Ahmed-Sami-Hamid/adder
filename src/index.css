@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,6 +31,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Maven Pro",Times,Arial,Sans-Serif;
 }
 
 h1 {
