@@ -78,7 +78,7 @@ export const useCalculatorOperations = ()=>{
       const enabledOps = ops.filter((op) => !op.isDisabled);
       for (let i = 0; i < enabledOps.length; i++) {
         const value = parseFloat(enabledOps[i].value);
-        if (enabledOps[i].error) continue;
+        if (enabledOps[i].error || isNaN(value)) continue;
         if (enabledOps[i].operation === "+") {
           result += value;
         } else {

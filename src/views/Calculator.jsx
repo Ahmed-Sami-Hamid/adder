@@ -2,7 +2,7 @@
 import { useCalculatorOperations } from "../hooks/useCalculatorOperations";
 
 // Style
-// import Style from './Calculater.module.css';
+import Style from './Calculator.module.css';
 
 
 
@@ -12,7 +12,7 @@ const Calculator = () => {
   return (
     <div className="wrapper">
       <div>
-        <button onClick={handlers.handleOnAddBlock}>Add row</button>
+        <button className={Style.mainButton} onClick={handlers.handleOnAddBlock}>Add row</button>
       </div>
       <ul>
         {state.ops.map((operation, index) => {
@@ -56,8 +56,8 @@ const CalcOperation = (props) => {
         <option value="-">-</option>
       </select>
       <input type="text" onChange={props.onTextChange} />
-      <button onClick={props.onDelete}>Delete</button>
-      <button onClick={props.onToggleChange}>
+      <button className={Style.deleteButton} onClick={props.onDelete}>Delete</button>
+      <button className={props.operation.isDisabled ? Style.Enable : Style.mainButton} onClick={props.onToggleChange}>
         {props.operation.isDisabled ? "Enable" : "Disable"}
       </button>
       </div>
