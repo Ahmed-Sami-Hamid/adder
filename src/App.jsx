@@ -1,5 +1,8 @@
 import './App.css'
+import Contact from './components/Contact/Contact'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+
 import Calculator from './views/Calculator'
 
 function App() {
@@ -7,8 +10,10 @@ function App() {
 
   return (
     <>
-    <Header/>
-     <Calculator/>
+      <Header/>
+      <Calculator/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }

@@ -1,0 +1,18 @@
+.contactWrapper{
+    width: 60px;
+    height: 60px;
+    background-color: #057BFF !important;
+    border-radius: 23px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.icon{
+    font-size: 35px;
+    color:white;
+}
